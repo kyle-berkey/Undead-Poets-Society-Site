@@ -5,10 +5,10 @@ var mobileMenu = document.getElementById('mobileMenu');
 
 mobile.onclick = function() {
 	
-	if (mobileMenu.style.display != 'none') {
-		  mobileMenu.style.display = 'none';
+	if (mobileMenu.style.display == 'none') {
+		  return mobileMenu.style.display = 'block';
 	}
 	else {
-			mobileMenu.style.display = 'block';
+			return mobileMenu.style.display = 'none';
 	}
 }

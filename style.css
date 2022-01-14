@@ -47,10 +47,11 @@ body {
 }
 .logo {
   height: 100px;
+  padding-bottom: 10px !important;
 }
 .navBar ul {
   list-style-type: none;
-	padding-left: 0;
+  padding-left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -64,7 +65,7 @@ body {
 }
 
 .navBar ul li a {
-	text-decoration: none;
+  text-decoration: none;
   color:inherit;
 }
 
@@ -76,19 +77,6 @@ body {
 #mobileMenu{
 	display: none;
 }
-
-/* MOBILE MENU */
-@media screen and (max-width: 500px) {
-	#mobile {
-		display: block;
-	}
-
-	.noMobile {
-		display: none;
-	}
-
-}
-
 
 /* HOME PAGE */
 
@@ -456,4 +444,54 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+
+/* MOBILE MENU */
+@media screen and (max-width: 500px) {
+	#mobile {
+		display: block !important;
+		position: relative;
+		top: 45%;
+	}
+
+	.noMobile {
+		display: none !important;
+	}
+
+	.logo {
+		padding-top: 2px;
+		height: 100px;
+		width: 100px;
+	}
+
+	#mobileMenu {
+		background-color: rgba(185, 184, 191, 0.5);
+	}
+
+	#mobileMenu ul {
+		list-style-type: none;
+		padding: 0;
+		display: block;
+		width: 90%;
+		text-decoration: none;
+		font-family: abolition;
+		font-size: 45pt;
+		color: rgb(68, 64, 89);
+		margin: 0;
+		margin-right: 0;
+	}
+
+	#mobileMenu ul li {
+		width: 110%;
+		border-bottom: rgb(68, 64, 89) solid 2px;
+	}
+
+	#mobileMenu ul li a {
+		width: 100%;
+		text-decoration: none;
+		color:inherit;
+		padding-left: 2.5%;
+	}
 }
