@@ -86,7 +86,6 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	overflow: hidden;
-	padding-bottom: 50%;
 	background-color: #b9b8bf;
 }
 
@@ -112,6 +111,14 @@ body {
   font-size: 38pt;
 }
 
+#mobileHome {
+	display: none;
+}
+
+#mobileSize {
+	display: none;
+}
+
 /* MOBILE HOME PAGE */
 @media screen and (max-width: 1200px) {
 	#home {
@@ -121,16 +128,51 @@ body {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
 	#home {
 		width: 100%;
 		background-image: url(./images/mobile.png);
 		background-repeat: none;
 		background-size: 100% auto;
+		height: auto;
+		overflow: scroll;
 	}
 
 	#mainText {
-		width: 100px;
+		width: 100%;
+		background-color: none;
+		margin-top: -115px;
+	}
+
+	#mobileHome {
+		display: block;
+	}
+
+	#mobileSize {
+		display: block;
+		opacity: 0;
+		height: max-content;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#mainText .title {
+		font-size: 28px;
+	}
+
+	#mainText .desc {
+		font-size: 36px;
+	}
+
+	#mainText {
+		padding-top: 45px;
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	#mainText {
+		padding: 50px 0 70px 0;
 	}
 }
 
