@@ -192,7 +192,8 @@ body {
       radial-gradient(circle at 6.7% 75%,
         rgba(68, 64, 89, 1),
         rgba(68, 64, 89, 0.5) 70.71%) rgba(68, 64, 89, 1);
-	padding-bottom: 100%;
+		display: inline-block;
+		min-height: 100vh;
 }
 
 #members {
@@ -395,7 +396,7 @@ body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 70%;
+  top: 350px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -488,6 +489,58 @@ body {
   cursor: pointer;
 }
 
+/* MOBILE MUSIC PAGE */
+@media screen and (max-width: 900px) {
+	.album {
+		padding: 20px 0 20px 0;
+	}
+
+	.album img {
+		width: 90%;
+		height:  auto;
+	}
+	.album h2 {
+		font-size: 40px;
+		margin-left: 5%;
+	}
+
+	.album p {
+		margin-left: 5%;
+		margin-top: 5px;
+	}
+
+	.myBtn {
+		font-size: 10px;
+		height: 45px;
+		width: 150px;
+		left: 0;
+		margin-top: 50px;
+	}
+
+	.prev, .next {
+		top: 500px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.album h2 {
+		width: 90%;
+	}
+
+	.album p {
+		width: 90%;
+	}
+	
+	.myBtn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.prev, .next {
+		top: 400px;
+	}
+}
 
 
 /* MOBILE MENU */
@@ -537,3 +590,4 @@ body {
 		padding-left: 2.5%;
 	}
 }
+
