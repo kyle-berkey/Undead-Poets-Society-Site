@@ -48,10 +48,11 @@ body {
 .logo {
   width: 100px;
   height: 100px;
+  padding-bottom: 10px !important;
 }
 .navBar ul {
   list-style-type: none;
-	padding-left: 0;
+  padding-left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -65,7 +66,7 @@ body {
 }
 
 .navBar ul li a {
-	text-decoration: none;
+  text-decoration: none;
   color:inherit;
 }
 
@@ -78,19 +79,6 @@ body {
 	display: none;
 }
 
-/* MOBILE MENU */
-@media screen and (max-width: 500px) {
-	#mobile {
-		display: block;
-	}
-
-	.noMobile {
-		display: none;
-	}
-
-}
-
-
 /* HOME PAGE */
 
 #home {
@@ -99,7 +87,6 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	overflow: hidden;
-	padding-bottom: 50%;
 	background-color: #b9b8bf;
 }
 
@@ -125,6 +112,14 @@ body {
   font-size: 38pt;
 }
 
+#mobileHome {
+	display: none;
+}
+
+#mobileSize {
+	display: none;
+}
+
 /* MOBILE HOME PAGE */
 @media screen and (max-width: 1200px) {
 	#home {
@@ -134,16 +129,51 @@ body {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
 	#home {
 		width: 100%;
 		background-image: url(./images/mobile.png);
 		background-repeat: none;
 		background-size: 100% auto;
+		height: auto;
+		overflow: scroll;
 	}
 
 	#mainText {
-		width: 100px;
+		width: 100%;
+		background-color: none;
+		margin-top: -115px;
+	}
+
+	#mobileHome {
+		display: block;
+	}
+
+	#mobileSize {
+		display: block;
+		opacity: 0;
+		height: max-content;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#mainText .title {
+		font-size: 28px;
+	}
+
+	#mainText .desc {
+		font-size: 36px;
+	}
+
+	#mainText {
+		padding-top: 45px;
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	#mainText {
+		padding: 50px 0 70px 0;
 	}
 }
 
@@ -163,7 +193,8 @@ body {
       radial-gradient(circle at 6.7% 75%,
         rgba(68, 64, 89, 1),
         rgba(68, 64, 89, 0.5) 70.71%) rgba(68, 64, 89, 1);
-	padding-bottom: 100%;
+		display: inline-block;
+		min-height: 100vh;
 }
 
 #members {
@@ -366,7 +397,7 @@ body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 70%;
+  top: 350px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -458,3 +489,106 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* MOBILE MUSIC PAGE */
+@media screen and (max-width: 900px) {
+	.album {
+		padding: 20px 0 20px 0;
+	}
+
+	.album img {
+		width: 90%;
+		height:  auto;
+	}
+	.album h2 {
+		font-size: 40px;
+		margin-left: 5%;
+	}
+
+	.album p {
+		margin-left: 5%;
+		margin-top: 5px;
+	}
+
+	.myBtn {
+		font-size: 10px;
+		height: 45px;
+		width: 150px;
+		left: 0;
+		margin-top: 50px;
+	}
+
+	.prev, .next {
+		top: 500px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.album h2 {
+		width: 90%;
+	}
+
+	.album p {
+		width: 90%;
+	}
+	
+	.myBtn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.prev, .next {
+		top: 400px;
+	}
+}
+
+
+/* MOBILE MENU */
+@media screen and (max-width: 500px) {
+	#mobile {
+		display: block !important;
+		position: relative;
+		top: 45%;
+	}
+
+	.noMobile {
+		display: none !important;
+	}
+
+	.logo {
+		padding-top: 2px;
+		height: 100px;
+		width: 100px;
+	}
+
+	#mobileMenu {
+		background-color: rgba(185, 184, 191, 0.5);
+	}
+
+	#mobileMenu ul {
+		list-style-type: none;
+		padding: 0;
+		display: block;
+		width: 90%;
+		text-decoration: none;
+		font-family: abolition;
+		font-size: 45pt;
+		color: rgb(68, 64, 89);
+		margin: 0;
+		margin-right: 0;
+	}
+
+	#mobileMenu ul li {
+		width: 110%;
+		border-bottom: rgb(68, 64, 89) solid 2px;
+	}
+
+	#mobileMenu ul li a {
+		width: 100%;
+		text-decoration: none;
+		color:inherit;
+		padding-left: 2.5%;
+	}
+}
+

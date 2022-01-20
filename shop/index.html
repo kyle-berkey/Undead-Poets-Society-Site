@@ -10,13 +10,21 @@
 <body>
 	<div class="background">
 	<div class="navBar">
-      <img id="logo" src="../images/logo.png">
+      <img class="logo" src="../images/logo.png">
       <ul>
-        <li><a href="../">HOME</a></li>
-        <li><a href="../contact_us">CONTACT US</a></li>
-        <li><a href="../music">MUSIC</a></li>
+        <li><a class="noMobile" href="../">HOME</a></li>
+        <li><a class="noMobile" href="../contact_us">CONTACT US</a></li>
+        <li><a class="noMobile" href="../music">MUSIC</a></li>
+		<img id="mobile" src="../images/hamburger.svg" alt="menu" width="100px" height="auto">
       </ul>
     </div>
+	<div id="mobileMenu">
+		<ul>
+		  <li><a href="../">HOME</a></li>
+		  <li><a href="./music">MUSIC</a></li>
+		  <li><a href="./shop">SHOP</a></li>
+		</ul>
+	</div>
 	
 		<div id="my-store-69304527"></div>
 <div>
@@ -24,5 +32,6 @@
 </div>
 </div>
 
+<script src="../script.js"></script>
 </body>
 </html>
