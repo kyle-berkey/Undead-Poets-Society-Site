@@ -551,6 +551,19 @@ body {
 	}
 }
 
+/* 404 PAGE */
+.fourofour {
+	width: 100vh;
+	
+}
+
+.fourofour h1 {
+	margin: auto;
+}
+
+.fourofour button {
+
+}
 
 /* MOBILE MENU */
 @media screen and (max-width: 650px) {
