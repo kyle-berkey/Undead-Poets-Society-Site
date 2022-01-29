@@ -195,6 +195,7 @@ body {
         rgba(68, 64, 89, 0.5) 70.71%) rgba(68, 64, 89, 1);
 		display: inline-block;
 		min-height: 100vh;
+		min-width: 100%;
 }
 
 #members {
@@ -315,6 +316,16 @@ body {
 
 ::placeholder {
 	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	#members div {
+		width: 40%;
+	}
+
+	#members {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 450px) {
