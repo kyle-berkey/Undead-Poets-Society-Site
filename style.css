@@ -400,7 +400,7 @@ body {
 	margin-left: 5px;
 }
 
-.song p:nth-child(3) {
+.song p:nth-child(2) {
 	float: right;
 	display: block;
 	font-family: abolition;
