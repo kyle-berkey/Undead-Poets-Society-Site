@@ -616,7 +616,7 @@ body {
 
 /* Pop-Up */
 #popUp {
-	border: 2px solid #d92332;
+	border: 2px solid #b84e1a;
 	padding: 5px;
 	z-index: 20;
 	position: fixed;
@@ -624,26 +624,26 @@ body {
 	width: 40%;
 	left: 50%;
 	transform: translateX(-50%);
-  
-	background-color: #2a438c;
+	font-family: abolition;
+	background-color: rgb(185, 184, 191, 0.5);
   }
   #popUpTitle {
 	text-align: center;
-	color: #f2f2f2;
+	color: #444059;
 	font-size: 45px;
   }
   #popUpDesc {
 	text-align: center;
-	color: #f2f2f2;
+	color: #444059;
 	font-size: 24px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: rock-salt-pro;
   }
   #popUp button {
 	margin-top: 30px;
-	background-color: #d92332;
-	color: #f2f2f2;
+	background-color: #b84e1a;
+	color: #444059;
 	font-size: 24px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: abolition;
 	border-radius: 15px;
 	width: 100%;
 	left: 50%;
@@ -663,3 +663,6 @@ body {
 	  width: 80%;
 	}
   }
+
+  
+

@@ -1,19 +1,4 @@
-console.log('no dude');
-
-var mobile = document.getElementById('mobile');
-var mobileMenu = document.getElementById('mobileMenu');
-
-mobile.onclick = function() {
-	
-	if (mobileMenu.style.display == 'none') {
-		  return mobileMenu.style.display = 'block';
-	}
-	else {
-			return mobileMenu.style.display = 'none';
-	}
-}
-
-
+// popup
 function popUpGen(title, desc) {
 	if($('#popUp').length == 1) popUp.remove();
 	
@@ -39,3 +24,5 @@ function popUpGen(title, desc) {
 	
 	body.appendChild(popUp);
   }
+  
+  // music nlides
