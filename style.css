@@ -466,7 +466,7 @@ body {
 }
 
 
-.modal {
+#modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -493,7 +493,7 @@ body {
 	margin: auto;
 }
 
-.close {
+#close {
   color: #aaaaaa;
   position: relative;
 	left: 620px;
@@ -502,8 +502,8 @@ body {
 
 }
 
-.close:hover,
-.close:focus {
+#close:hover,
+#close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
