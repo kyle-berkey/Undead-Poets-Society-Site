@@ -611,3 +611,58 @@ body {
 	}
 }
 
+
+
+
+/* Pop-Up */
+#popUp {
+	border: 2px solid #b84e1a;
+	padding: 5px;
+	z-index: 20;
+	position: fixed;
+	top: 30%;
+	width: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: abolition;
+	background-color: rgb(185, 184, 191, 0.5);
+  }
+  #popUpTitle {
+	text-align: center;
+	color: #444059;
+	font-size: 45px;
+  }
+  #popUpDesc {
+	text-align: center;
+	color: #444059;
+	font-size: 24px;
+	font-family: rock-salt-pro;
+  }
+  #popUp button {
+	margin-top: 30px;
+	background-color: #b84e1a;
+	color: #444059;
+	font-size: 24px;
+	font-family: abolition;
+	border-radius: 15px;
+	width: 100%;
+	left: 50%;
+	border: 0;
+	cursor: pointer;
+  }
+  #popUpInput {
+	width: 80%;
+	border-radius: 10px;
+	margin-top: 20px;
+	resize: none;
+	  padding: 10px;
+  }
+  
+  @media only screen and (max-width: 650px) {
+	#popUp {
+	  width: 80%;
+	}
+  }
+
+  
+
