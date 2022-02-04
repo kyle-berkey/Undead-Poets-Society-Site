@@ -26,148 +26,65 @@
 		</ul>
 	</div>
 
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	<a class="prev" onclick="plusSlides(1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(-1)">&#10095;</a>
 
-	<div id="pg1" class="slide">
+	<!-- TO ADD SONG VIDEOS, ADD src VALUE OF YOUTUBE'S IMBED TO onclick="play(src)" AND MAKE SURE TO USE `` SYMBOLS, NOT '' OR ""-->
+
+	<div class="slide">
+		<div class="album">
+			<img src="../images/cycles.png" alt="album cover" width="35%" height="auto">
+			<p>January 2022</p>
+			<h2>Cycles</h2>
+			<button class="myBtn" onclick="play(`https://www.youtube.com/embed/LTd00CJKtUo`)">Listen Now!</button>
+			<div class="icons">
+				<a href="https://open.spotify.com/artist/799BviaYc0b9kFW8YRT4BP" target="_blank"><img src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/48/000000/external-free-audio-and-music-with-advertisement-on-spotify-music-light-tal-revivo.png"/></a>
+				<a href="https://music.amazon.com/artists/B09FHYKTKK/undead-poets-society" target="_blank"><img src="https://img.icons8.com/ios/50/000000/amazon-music.png"/></a>
+				<a href="https://music.apple.com/us/artist/undead-poets-society/1584558428" target="_blank"><img src="https://img.icons8.com/ios/50/000000/apple-music.png"/></a>
+				<a href="https://www.pandora.com/artist/undead-poets-society/AR37czbb7442hjX" target="_blank"><img src="https://img.icons8.com/ios/50/000000/pandora-app.png"/></a>
+			</div>
+		</div>
+		<div class="songs">
+			<div class="song">
+				<p onclick="play(`https://www.youtube.com/embed/LTd00CJKtUo`)">1 - Cycles</p>
+				<p>3:25</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide">
 		<div class="album">
 			<img src="../images/upinflames.png" alt="album cover" width="35%" height="auto">
 			<p>November 2021 - Single</p>
 			<h2>What If You Go Up In Flames?</h2>
-			
-			<button id="upinflamesBtn" class="myBtn">Listen Now!</button>
-
-			<div id="upinflames1" class="modal">
-				<div class="modal-content">
-					<span class="upinflamesclose1 close">&times;</span>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zXPkfdv7o7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-			<script>
-					var upinflames1 = document.getElementById("upinflames1");
-					var upinflamesBtn = document.getElementById("upinflamesBtn");
-					var upinflamesclose1 = document.getElementsByClassName("upinflamesclose1")[0];
-					upinflamesBtn.onclick = function() {
-						upinflames1.style.display = "block";
-					}
-					upinflamesclose1.onclick = function() {
-						upinflames1.style.display = "none";
-					}
-				</script>
-
+			<button class="myBtn" onclick="play(`https://www.youtube.com/embed/zXPkfdv7o7E`)">Listen Now!</button>
 		</div>
-
 		<div class="songs">
 			<div class="song">
-				<p id="upinflamesLnk" class="myLnk">1 - What If You go up in flames?</p>
-				<div id="upinflames" class="modal">
-					<div class="modal-content">
-						<span class="upinflamesclose close">&times;</span>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/zXPkfdv7o7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
+				<p onclick="play(`https://www.youtube.com/embed/zXPkfdv7o7E`)">1 - What If You go up in flames?</p>
 				<p>2:55</p>
-				<script>
-					var upinflames = document.getElementById("upinflames");
-					var upinflamesLnk = document.getElementById("upinflamesLnk");
-					var upinflamesclose = document.getElementsByClassName("upinflamesclose")[0];
-					upinflamesLnk.onclick = function() {
-						upinflames.style.display = "block";
-						document.getElementById('upinflames').style.display = 'block';
-					}
-					upinflames.onclick = function() {
-						upinflames.style.display = "none";
-					}
-				</script>
 			</div>
 		</div>
 	</div>
 
 
-	<div id="pg2" class="slide">
+	<div class="slide">
 		<div class="album">
-			<img src="" alt="album cover" width="35%" height="auto">
-			<p></p>
-			<h2></h2>
-
-			<button id="bothofusBtn" class="myBtn">Listen Now!</button>
-
-			<div id="bothofus1" class="modal">
-				<div class="modal-content">
-					<span class="bothofusclose1 close">&times;</span>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/hlFR-kryN3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-			<script>
-					var bothofus1 = document.getElementById("bothofus1");
-					var bothofusBtn = document.getElementById("bothofusBtn");
-					var bothofusclose1 = document.getElementsByClassName("bothofusclose1")[0];
-					bothofusBtn.onclick = function() {
-						bothofus1.style.display = "block";
-					}
-					bothofusclose1.onclick = function() {
-						bothofus1.style.display = "none";
-					}
-				</script>
+			<img src="../images/bothofus.png" alt="album cover" width="35%" height="auto">
+			<p>September 2021</p>
+			<h2>The Both of Us</h2>
+			<button class="myBtn" onclick="play(`https://www.youtube.com/embed/hlFR-kryN3U`)">Listen Now!</button>
 		</div>
-
 		<div class="songs">
 			<div class="song">
-				<p id="bothofusLnk" class="myLnk">1 - The Both of Us</p>
-				<div id="bothofus" class="modal">
-					<div class="modal-content">
-						<span class="bothofusclose close">&times;</span>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/hlFR-kryN3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-				<p>time</p>
-				<script>
-					var bothofus = document.getElementById("bothofus");
-					var bothofusLnk = document.getElementById("bothofusLnk");
-					var bothofusclose = document.getElementsByClassName("bothofusclose")[0];
-					bothofusLnk.onclick = function() {
-						bothofus.style.display = "block";
-					}
-					bothofusclose.onclick = function() {
-						bothofus.style.display = "none";
-					}
-				</script>
+				<p onclick="play(`https://www.youtube.com/embed/hlFR-kryN3U`)">1 - The Both of Us</p>
+				<p>3:38</p>
 			</div>
 		</div>
 	</div>
 
 
-	<div id="pg3" class="slide">
-		<div class="album">
-			<img src="" alt="album cover" width="35%" height="auto">
-			<p></p>
-			<h2></h2>
-
-			<button id="myBtn">Listen Now!</button>
-
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<iframe></iframe>
-				</div>
-			</div>
-		</div>
-
-		<div class="songs">
-			<div class="song">
-				<p></p>
-				<p></p>
-			</div>
-			<div class="song">
-				<p></p>
-				<p></p>
-			</div>
-			<div class="song">
-				<p></p>
-				<p></p>
-			</div>
-		</div>
-	</div>
+	
 
 
 
@@ -191,50 +108,15 @@
 
 
 
+	<div id="modal">
+		<div class="modal-content">
+			<span id="close">&times;</span>
+			<iframe id="iframe" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
 
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-
-
-
-
-window.onclick = function(event) {
-    if (event.target == upinflames1) {
-        upinflames1.style.display = "none";
-    }
-    if (event.target == upinflames) {
-        upinflames.style.display = "none";
-    }
-		if (event.target == bothofus1) {
-        bothofus1.style.display = "none";
-    }
-		if (event.target == bothofus) {
-        bothofus.style.display = "none";
-    }
-}
-</script>
 
 <script src="../script.js"></script>
 </body>

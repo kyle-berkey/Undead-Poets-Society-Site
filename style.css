@@ -120,6 +120,24 @@ body {
 	display: none;
 }
 
+.socialsMobile {
+	display: none;
+}
+
+.socials {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 250px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.socials img {
+	width: 100px;
+	height: auto;
+}
+
 /* MOBILE HOME PAGE */
 @media screen and (max-width: 1200px) {
 	#home {
@@ -143,6 +161,7 @@ body {
 		width: 100%;
 		background-color: none;
 		margin-top: -115px;
+		height: auto;
 	}
 
 	#mobileHome {
@@ -153,6 +172,15 @@ body {
 		display: block;
 		opacity: 0;
 		height: max-content;
+	}
+
+	.socials {
+		display: none;
+	}
+
+	.socialsMobile {
+		display: block;
+
 	}
 }
 
@@ -195,6 +223,7 @@ body {
         rgba(68, 64, 89, 0.5) 70.71%) rgba(68, 64, 89, 1);
 		display: inline-block;
 		min-height: 100vh;
+		min-width: 100%;
 }
 
 #members {
@@ -317,6 +346,16 @@ body {
 	color: white;
 }
 
+@media screen and (max-width: 600px) {
+	#members div {
+		width: 40%;
+	}
+
+	#members {
+		flex-wrap: wrap;
+	}
+}
+
 @media screen and (max-width: 450px) {
 	#members h2 {
 		font-size: 7px;
@@ -367,11 +406,32 @@ body {
 	color: #000059;
 }
 
+.icons img {
+	width: 25px;
+	height: auto;
+	margin: 0;
+}
+
+.icons a:hover {
+	cursor: pointer;
+}
+
+.icons {
+	margin: 0;
+	position: relative;
+	top: 50px;
+	left: 15%;
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+}
+
 .songs {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
 	margin-left: 10%;
+	margin-bottom: 25%;
 }
 
 .song {
@@ -387,9 +447,10 @@ body {
   font-size: 15pt;
 	color: #000059;
 	margin-left: 5px;
+	cursor: pointer;
 }
 
-.song p:nth-child(3) {
+.song p:nth-child(2) {
 	float: right;
 	display: block;
 	font-family: abolition;
@@ -455,7 +516,7 @@ body {
 }
 
 
-.modal {
+#modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -482,7 +543,7 @@ body {
 	margin: auto;
 }
 
-.close {
+#close {
   color: #aaaaaa;
   position: relative;
 	left: 620px;
@@ -491,8 +552,8 @@ body {
 
 }
 
-.close:hover,
-.close:focus {
+#close:hover,
+#close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -529,6 +590,12 @@ body {
 	.prev, .next {
 		top: 500px;
 	}
+	
+	.icons {
+		top: 10px;
+		left: 5%;
+		width: 250px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -549,6 +616,12 @@ body {
 	.prev, .next {
 		top: 400px;
 	}
+
+	.icons {
+		top: 10px;
+		left: 50%;
+		transform: translate(-50%);
+	}
 }
 
 /* 404 PAGE */
@@ -564,6 +637,7 @@ body {
 .fourofour button {
 
 }
+
 
 /* MOBILE MENU */
 @media screen and (max-width: 650px) {
@@ -612,4 +686,59 @@ body {
 		padding-left: 2.5%;
 	}
 }
+
+
+
+
+/* Pop-Up */
+#popUp {
+	border: 2px solid #b84e1a;
+	padding: 5px;
+	z-index: 20;
+	position: fixed;
+	top: 30%;
+	width: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: abolition;
+	background-color: rgb(185, 184, 191, 0.5);
+  }
+  #popUpTitle {
+	text-align: center;
+	color: #444059;
+	font-size: 45px;
+  }
+  #popUpDesc {
+	text-align: center;
+	color: #444059;
+	font-size: 24px;
+	font-family: rock-salt-pro;
+  }
+  #popUp button {
+	margin-top: 30px;
+	background-color: #b84e1a;
+	color: #444059;
+	font-size: 24px;
+	font-family: abolition;
+	border-radius: 15px;
+	width: 100%;
+	left: 50%;
+	border: 0;
+	cursor: pointer;
+  }
+  #popUpInput {
+	width: 80%;
+	border-radius: 10px;
+	margin-top: 20px;
+	resize: none;
+	  padding: 10px;
+  }
+  
+  @media only screen and (max-width: 650px) {
+	#popUp {
+	  width: 80%;
+	}
+  }
+
+  
 
