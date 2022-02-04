@@ -624,6 +624,19 @@ body {
 	}
 }
 
+/* 404 PAGE */
+.fourofour {
+	width: 100vh;
+	
+}
+
+.fourofour h1 {
+	margin: auto;
+}
+
+.fourofour button {
+
+}
 
 
 /* MOBILE MENU */
