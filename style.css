@@ -398,6 +398,7 @@ body {
   font-size: 15pt;
 	color: #000059;
 	margin-left: 5px;
+	cursor: pointer;
 }
 
 .song p:nth-child(2) {
