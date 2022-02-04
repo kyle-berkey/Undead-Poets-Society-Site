@@ -639,13 +639,7 @@ body {
 	
 }
 
-<<<<<<< Updated upstream
 .fourofour .title {
-=======
-.fourofour h1 {
-	margin: auto;
-	.fourofour .title {
->>>>>>> Stashed changes
 	width: fit-content;
 	position: relative;
 	left: 50%;
@@ -664,7 +658,6 @@ body {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
-<<<<<<< Updated upstream
 }
 
 a.onlyhome {
@@ -672,16 +665,6 @@ a.onlyhome {
 	right: 5%;
 }
 
-=======
-}
-
-.fourofour button {
-a.onlyhome {
-	position: absolute;
-	right: 5%;
-}
-
->>>>>>> Stashed changes
 @media screen and (max-width: 600px) {
 	.fourofour .myBtn {
 		position: relative;
@@ -689,11 +672,6 @@ a.onlyhome {
 		transform: translate(-50%);
 		margin-left: 0;
 	}
-<<<<<<< Updated upstream
-
-	.fourofour .title {
-		font-size: 25px;
-=======
 
 	.fourofour .title {
 		font-size: 25px;
@@ -764,7 +742,6 @@ a.onlyhome {
 
 	.leftepk {
 		width: 95%;
->>>>>>> Stashed changes
 	}
 }
 
