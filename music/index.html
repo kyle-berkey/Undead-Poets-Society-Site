@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music</title>
+	<link rel="shortcut icon" href="../images/logo.png">
+	<link href="../style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="background">
+	<div class="navBar">
+      <img class="logo" src="../images/logo.png">
+      <ul>
+        <li><a class="noMobile" href="../">HOME</a></li>
+        <li><a class="noMobile" href="../contact_us">CONTACT US</a></li>
+        <li><a class="noMobile" href="../shop">SHOP</a></li>
+		<img id="mobile" src="../images/hamburger.svg" alt="menu" width="100px" height="auto">
+      </ul>
+    </div>
+	<div id="mobileMenu">
+		<ul>
+		  <li><a href="../">HOME</a></li>
+		  <li><a href="../contact_us">CONTACT US</a></li>
+		  <li><a href="../shop">SHOP</a></li>
+		</ul>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<div id="pg1" class="slide">
+		<div class="album">
+			<img src="../images/upinflames.png" alt="album cover" width="35%" height="auto">
+			<p>November 2021 - Single</p>
+			<h2>What If You Go Up In Flames?</h2>
+			
+			<button id="upinflamesBtn" class="myBtn">Listen Now!</button>
+
+			<div id="upinflames1" class="modal">
+				<div class="modal-content">
+					<span class="upinflamesclose1 close">&times;</span>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/zXPkfdv7o7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<script>
+					var upinflames1 = document.getElementById("upinflames1");
+					var upinflamesBtn = document.getElementById("upinflamesBtn");
+					var upinflamesclose1 = document.getElementsByClassName("upinflamesclose1")[0];
+					upinflamesBtn.onclick = function() {
+						upinflames1.style.display = "block";
+					}
+					upinflamesclose1.onclick = function() {
+						upinflames1.style.display = "none";
+					}
+				</script>
+
+		</div>
+
+		<div class="songs">
+			<div class="song">
+				<p id="upinflamesLnk" class="myLnk">1 - What If You go up in flames?</p>
+				<div id="upinflames" class="modal">
+					<div class="modal-content">
+						<span class="upinflamesclose close">&times;</span>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/zXPkfdv7o7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<p>2:55</p>
+				<script>
+					var upinflames = document.getElementById("upinflames");
+					var upinflamesLnk = document.getElementById("upinflamesLnk");
+					var upinflamesclose = document.getElementsByClassName("upinflamesclose")[0];
+					upinflamesLnk.onclick = function() {
+						upinflames.style.display = "block";
+						document.getElementById('upinflames').style.display = 'block';
+					}
+					upinflames.onclick = function() {
+						upinflames.style.display = "none";
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="pg2" class="slide">
+		<div class="album">
+			<img src="" alt="album cover" width="35%" height="auto">
+			<p></p>
+			<h2></h2>
+
+			<button id="bothofusBtn" class="myBtn">Listen Now!</button>
+
+			<div id="bothofus1" class="modal">
+				<div class="modal-content">
+					<span class="bothofusclose1 close">&times;</span>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/hlFR-kryN3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<script>
+					var bothofus1 = document.getElementById("bothofus1");
+					var bothofusBtn = document.getElementById("bothofusBtn");
+					var bothofusclose1 = document.getElementsByClassName("bothofusclose1")[0];
+					bothofusBtn.onclick = function() {
+						bothofus1.style.display = "block";
+					}
+					bothofusclose1.onclick = function() {
+						bothofus1.style.display = "none";
+					}
+				</script>
+		</div>
+
+		<div class="songs">
+			<div class="song">
+				<p id="bothofusLnk" class="myLnk">1 - The Both of Us</p>
+				<div id="bothofus" class="modal">
+					<div class="modal-content">
+						<span class="bothofusclose close">&times;</span>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/hlFR-kryN3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<p>time</p>
+				<script>
+					var bothofus = document.getElementById("bothofus");
+					var bothofusLnk = document.getElementById("bothofusLnk");
+					var bothofusclose = document.getElementsByClassName("bothofusclose")[0];
+					bothofusLnk.onclick = function() {
+						bothofus.style.display = "block";
+					}
+					bothofusclose.onclick = function() {
+						bothofus.style.display = "none";
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="pg3" class="slide">
+		<div class="album">
+			<img src="" alt="album cover" width="35%" height="auto">
+			<p></p>
+			<h2></h2>
+
+			<button id="myBtn">Listen Now!</button>
+
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<iframe></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="songs">
+			<div class="song">
+				<p></p>
+				<p></p>
+			</div>
+			<div class="song">
+				<p></p>
+				<p></p>
+			</div>
+			<div class="song">
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+
+
+
+window.onclick = function(event) {
+    if (event.target == upinflames1) {
+        upinflames1.style.display = "none";
+    }
+    if (event.target == upinflames) {
+        upinflames.style.display = "none";
+    }
+		if (event.target == bothofus1) {
+        bothofus1.style.display = "none";
+    }
+		if (event.target == bothofus) {
+        bothofus.style.display = "none";
+    }
+}
+</script>
+
+<script src="../script.js"></script>
+</body>
+</html>
