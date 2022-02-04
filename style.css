@@ -36,6 +36,14 @@ body {
   margin: 0;
 }
 
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
 /* NAV BAR FOR ALL PAGES */
 
 .navBar {
@@ -102,12 +110,12 @@ body {
   color: #000036;
 }
 
-#mainText .title {
+.title {
   font-family: rock-salt-pro;
   font-size: 26pt;
 }
 
-#mainText .desc {
+.desc {
 	font-family: looking-flowers-caps;
   font-size: 38pt;
 }
