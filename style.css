@@ -639,8 +639,6 @@ body {
 	
 }
 
-.fourofour h1 {
-	margin: auto;
 .fourofour .title {
 	width: fit-content;
 	position: relative;
@@ -662,7 +660,6 @@ body {
 	transform: translate(-50%);
 }
 
-.fourofour button {
 a.onlyhome {
 	position: absolute;
 	right: 5%;
