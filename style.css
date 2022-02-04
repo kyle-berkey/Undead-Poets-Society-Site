@@ -624,21 +624,121 @@ body {
 	}
 }
 
-/* 404 PAGE */
-.fourofour {
+ /* 404 PAGE */
+ .fourofour {
 	width: 100vh;
+	width: 100%;
 	
 }
 
 .fourofour h1 {
 	margin: auto;
+.fourofour .title {
+	width: fit-content;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.fourofour img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 25%;
+}
+
+.fourofour .myBtn {
+
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .fourofour button {
-
+a.onlyhome {
+	position: absolute;
+	right: 5%;
 }
 
+@media screen and (max-width: 600px) {
+	.fourofour .myBtn {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		margin-left: 0;
+	}
 
+	.fourofour .title {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.fourofour .title {
+		font-size: 20px;
+	}
+} 
+
+
+/* EPK PAGE */
+
+.epksect {
+	margin: 2.5%;
+}
+
+.epksect > div {
+	background-color: rgb(185, 184, 191, 0.5);
+	margin-bottom: 50px;
+	padding-bottom: 25px;
+}
+
+.rightepk {
+	float: right;
+	width: 45%;
+}
+
+.rightepk iframe {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	max-width: 90%;
+}
+
+.leftepk {
+	float: left;
+	width: 45%;
+}
+
+.leftepk img {
+	max-width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.epksect .title {
+	width: 100%;
+	text-align: center;
+}
+
+.epksect .desc {
+	width: 100%;
+	text-align: center;
+}
+
+.email {
+	font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.rightepk {
+		width: 95%;
+	}
+
+	.leftepk {
+		width: 95%;
+	}
+}
 /* MOBILE MENU */
 @media screen and (max-width: 650px) {
 	#mobile {
